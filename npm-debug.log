@@ -1,0 +1,51 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'adduser' ]
+2 info using npm@1.1.36
+3 info using node@v0.8.2
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose config file C:\Users\SimonovTony\.npmrc
+6 verbose config file C:\Program Files\nodejs\etc\npmrc
+7 verbose config file C:\Program Files\nodejs\node_modules\npm\npmrc
+8 verbose adduser before first PUT { name: 'Anton Simonov',
+8 verbose adduser   salt: 'a567027c-c6ea-4c47-a136-a23baff517aa',
+8 verbose adduser   password_sha: 'f5a3c91240ec9ba08abc8345479e937e59707214',
+8 verbose adduser   email: 'simonovtony@gmail.com',
+8 verbose adduser   _id: 'org.couchdb.user:Anton Simonov',
+8 verbose adduser   type: 'user',
+8 verbose adduser   roles: [],
+8 verbose adduser   date: '2017-05-16T22:22:38.868Z' }
+9 verbose url raw /-/user/org.couchdb.user:Anton%20Simonov
+10 verbose url resolving [ 'https://registry.npmjs.org/',
+10 verbose url resolving   './-/user/org.couchdb.user:Anton%20Simonov' ]
+11 verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:Anton%20Simonov
+12 info retry registry request attempt 1 at 01:22:38
+13 http PUT https://registry.npmjs.org/-/user/org.couchdb.user:Anton%20Simonov
+14 http 400 https://registry.npmjs.org/-/user/org.couchdb.user:Anton%20Simonov
+15 verbose adduser back [ [Error: Unknown error while authenticating : -/user/org.couchdb.user:Anton%20Simonov],
+15 verbose adduser   { ok: false, error: 'Unknown error while authenticating' },
+15 verbose adduser   '{"ok":false,"error":"Unknown error while authenticating"}' ]
+16 error Error: Unknown error while authenticating : -/user/org.couchdb.user:Anton%20Simonov
+16 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:212:14)
+16 error     at Request.init.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\main.js:120:22)
+16 error     at Request.EventEmitter.emit (events.js:91:17)
+16 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\main.js:555:16)
+16 error     at Request.EventEmitter.emit (events.js:88:17)
+16 error     at IncomingMessage.Request.start.self.req.self.httpModule.request.buffer (C:\Program Files\nodejs\node_modules\npm\node_modules\request\main.js:517:14)
+16 error     at IncomingMessage.EventEmitter.emit (events.js:115:20)
+16 error     at IncomingMessage._emitEnd (http.js:366:10)
+16 error     at HTTPParser.parserOnMessageComplete [as onMessageComplete] (http.js:149:23)
+16 error     at CleartextStream.socketOnData [as ondata] (http.js:1356:20)
+16 error  [Error: Unknown error while authenticating : -/user/org.couchdb.user:Anton%20Simonov]
+17 error You may report this log at:
+17 error     <http://github.com/isaacs/npm/issues>
+17 error or email it to:
+17 error     <npm-@googlegroups.com>
+18 error System Windows_NT 6.1.7601
+19 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "adduser"
+20 error cwd C:\Users\SimonovTony\Desktop\node.js\chapter.4\example.1.9\package
+21 error node -v v0.8.2
+22 error npm -v 1.1.36
+23 error message Unknown error while authenticating : -/user/org.couchdb.user:Anton%20Simonov
+24 verbose exit [ 1, true ]
